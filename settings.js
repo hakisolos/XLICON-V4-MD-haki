@@ -59,7 +59,7 @@ global.xprefix = '.'
 global.premium = ["923184070915"] // Premium User
 
 //bot sett
-global.typemenu = 'v12' // menu type 'v1' => 'v12'
+global.typemenu = 'v2' // menu type 'v1' => 'v12'
 global.typereply = 'v4' // reply type 'v1' => 'v4'
 global.autoblocknumber = '212' //set autoblock country code
 global.antiforeignnumber = '91' //set anti foreign number country code
@@ -69,17 +69,6 @@ global.antidelete = false //set anti delete
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json'
 
-//---------------------------------------------------------------------------------------//
-//api variables 
-
-global.api = "https://api.maher-zubair.xyz/" ;
-global.id = "RnJlZV9rZXlAc2FsbWFu" ;
-
-//---------------------------------------------------------------------------------------//
-
-
-
-// Description: This file is used to store global variables.
 
 
 global.limit = {
@@ -118,7 +107,7 @@ global.game = {
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
 	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update ${__filename}`))
+	console.log(chalk.redBright(`Updated ${__filename}`))
 	delete require.cache[file]
 	require(file)
 });
